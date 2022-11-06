@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Sans&family=Dancing+Script&family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+:root {
+  --green: hsl(112, 19%, 45%);
+  --brown: hsl(38, 31%, 62%);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  animation: opacity 2s ease-in-out;
+}
+
+.global {
+  width: 70%;
+  margin: auto;
+  background-color: rgba(245, 245, 245, 0.308);
+}
+
+.lavinia-page {
+  background-image: url(./image/background_01_home_04-1024x800.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: clamp(450px, 75%, 75%);
+  margin: auto;
+  height: 700px;
+  position: relative;
+}
+
+.lavinia-page-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  padding-bottom: 50px;
+}
+
+.lavinia-page-details img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.lavinia-page-details h2 {
+  color: var(--brown);
+  font-family: DM Sans;
+  font-size: 1.1vw;
+  letter-spacing: 3.3px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lavinia-page-details h1 {
+  color: var(--green);
+  font-size: clamp(2rem, 3.6vw, 6rem);
+  line-height: 121.5px;
+  font-family: "Alex Brush", cursive;
+}
+
+.lavinia-page-details h4 {
+  color: var(--brown);
+  margin-top: 10px;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  letter-spacing: 2.8px;
+  line-height: 30px;
+}
+
+.lavinia-sparkles-left {
+  z-index: 11;
+  height: 200px;
+  width: 300px;
+  background-image: url(./image/floating_image_17.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -30%;
+  left: -50%;
+  opacity: 40%;
+}
+
+.lavinia-sparkles-right {
+  z-index: 11;
+  height: 200px;
+  width: 300px;
+  background-image: url(./image/floating_image_18.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -30%;
+  right: -50%;
+  opacity: 40%;
+}
+
+.time {
+  height: 10vh;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  color: var(--brown);
+}
+
+.days,
+.minutes,
+.hours,
+.seconds {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: DM Sans;
+  line-height: 3.5rem;
+}
+
+.text {
+  font-family: "Alex Brush", cursive;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+/*Page 2*/
+
+.page2 {
+  margin-top: 8vh;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.couple {
+  background-image: url(./image/ecbda7dc305-1-pf6gia7kvg1opyxxe9f1dtkadk5fhjaziloig5oa9g.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.border {
+  width: 340px;
+  height: 340px;
+  overflow: visible;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-47%, -50%);
+}
+
+.tiny-flower {
+  width: 100px;
+  height: 100px;
+}
+
+.first {
+  color: var(--brown);
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  letter-spacing: 3.3px;
+  line-height: 2.1rem;
+}
+
+.second {
+  color: var(--green);
+  font-family: "Alex Brush", cursive;
+  font-size: 2.8rem;
+  line-height: 32px;
+  margin-top: 2rem;
+}
+
+/*page 3 */
+
+.page3 {
+  min-height: 80vh;
+  position: relative;
+}
+
+.wedding {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wedding-card {
+  padding: 0.5rem;
+  margin: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 30rem;
+  line-height: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 15px;
+}
+
+.wedding-card img {
+  margin-top: 20px;
+  width: 230px;
+  height: 230px;
+}
+
+.wedding-card h2 {
+  margin-top: 6rem;
+  color: var(--green);
+  font-family: Alex Brush;
+  font-size: 3rem;
+}
+
+.wedding-card h5 {
+  font-family: Dancing Script;
+  color: var(--brown);
+  font-size: 1.6rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.05rem;
+}
+
+iframe {
+  width: 90%;
+  border-radius: 10px;
+  height: 100px;
+  margin: 10px;
+}
+
+.wedding-card .center {
+  line-height: 3rem;
+}
+.wedding-card .right {
+  line-height: 3rem;
+}
+
+.img-flower {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translate(-50%, -10%);
+}
+
+/* Constantin Page */
+.page-constantin {
+  margin-top: 20rem;
+  height: 53.5vh;
+  color: var(--green);
+  font-family: Alex Brush;
+  font-size: 1.9rem;
+  text-align: center;
+  background-image: url(./image/background_01_home_04-1024x800.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.constantin-text {
+  letter-spacing: 1px;
+  background-color: white;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.invisible {
+  width: 100%;
+  height: fit-content;
+  opacity: 0px;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: fit-content;
+  height: 80px;
+}
+
+.visible {
+  width: 50%;
+  padding: 20px;
+  color: var(--brown);
+  font-size: 2rem;
+  line-height: 25px;
+  overflow: auto;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.constantin-img {
+  margin-top: 30px;
+  height: 120px;
+  width: 120px;
+}
+
+/* Page5 */
+.page5 {
+  background-image: url(./image/home_04_image_03.png);
+  height: 64vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+}
+
+.confirm {
+  background-color: white;
+  height: 8vh;
+}
+
+.contact-form {
+  background-color: rgba(245, 245, 245, 0.858);
+  width: 60rem;
+  max-height: 60rem;
+  height: fit-content;
+  position: absolute;
+  margin-top: 4rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  overflow-wrap: break-word;
+}
+
+.h3-confirm {
+  margin-top: 30px;
+  color: var(--brown);
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.h5-confirm {
+  margin-top: 20px;
+  color: var(--brown);
+  font-family: "Playball", cursive;
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin: 20px 0px 15px 0px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+
+input,
+label {
+  width: 49%;
+  color: var(--green);
+  font-family: "Playball", cursive;
+  opacity: 70%;
+}
+
+label {
+  color: var(--brown);
+  font-size: 1.6rem;
+}
+
+select {
+  width: 100%;
+  background-color: white;
+  color: var(--green);
+  font-weight: bold;
+  font-family: "Playball", cursive;
+}
+input,
+select {
+  height: 3rem;
+  border-color: hsla(38, 31%, 62%, 0.479);
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+textarea {
+  width: 99.5%;
+  color: var(--green);
+  font-family: "Playball", cursive;
+  border-radius: 5px;
+  border-color: hsla(38, 31%, 62%, 0.249);
+  resize: vertical;
+}
+
+.check-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.check-box p {
+  align-self: flex-start;
+  color: var(--brown);
+  font-size: 2rem;
+}
+
+.check-box input {
+  height: 1.5rem;
+  width: auto;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+  border: 1px solid hsla(38, 31%, 62%, 0.956);
+}
+
+input[type="radio"]:checked {
+  display: inline-block;
+  background-color: var(--brown);
+}
+
+.yes,
+.no {
+  width: 100%;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.submit {
+  width: 100%;
+  color: white;
+  background-color: var(--brown);
+  font-size: 2.2rem;
+  height: auto;
+}
+
+footer {
+  height: fit-content;
+  position: relative;
+}
+
+.footer-img {
+  margin-top: 1.5rem;
+  height: 100px;
+}
+
+.text-sparkles h1 {
+  font-size: 8rem;
+  margin: 8rem 0rem;
+}
+
+.text-sparkles img {
+  min-height: 200px;
+  width: 300px;
+  opacity: 70%;
+}
+
+.sparkle-left {
+  position: absolute;
+  left: 30%;
+  top: 45%;
+  rotate: -165deg;
+}
+
+.sparkle-right {
+  position: absolute;
+  right: 30%;
+  top: 45%;
+  rotate: -165deg;
+}
+
+.call {
+  padding: 10px 20px;
+  background-color: var(--brown);
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1vh;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
